@@ -1,76 +1,79 @@
-# Shortest Path Planning with Modified Dijkstra's Algorithm
+# Modified Dijkstra Algorithm with Visiting Frequency
+=====================================================
 
-## Description of the Algorithm and Code Functionality
+## Project Description
 
-This project implements a modified version of Dijkstra's algorithm to find the shortest path between two nodes in a graph. The modification includes a penalty based on the visiting frequency of nodes, which dynamically adjusts the path cost. The algorithm aims to balance the load across nodes by discouraging frequent visits to the same nodes.
+This project implements a modified version of Dijkstra's algorithm that incorporates visiting frequency into the pathfinding process. The algorithm is designed to find the shortest path between two nodes in a graph while considering the frequency of visits to each node.
 
-The code also includes functionality to save and load the visiting frequency of nodes to/from a file (`visiting_frequency.txt`), allowing the program to maintain state across multiple executions.
+## Motivation
 
-## Code Structure Explanation
+The motivation behind this project is to create a more realistic pathfinding system that accounts for the impact of repeated visits on the cost of reaching a node. This can be particularly useful in scenarios where repeated visits to certain nodes incur additional costs or penalties.
 
-- **`saveVisitingFrequency`**: Saves the current visiting frequency of nodes to a file.
-- **`loadVisitingFrequency`**: Loads the visiting frequency of nodes from a file, if it exists.
-- **`modifiedDijkstra`**: Implements the modified Dijkstra's algorithm with a penalty based on visiting frequency.
-- **`getPath`**: Retrieves the shortest path from the source to the destination and updates the visiting frequency of nodes along the path.
-- **`main`**: The main function that initializes the graph, handles user input, and executes the algorithm.
+## Method and Results
 
-## How to Use the Code
+### Method
 
-### Prerequisites
-- A C++ compiler (e.g., g++).
-- Basic understanding of graph theory and Dijkstra's algorithm.
+The modified Dijkstra's algorithm adjusts the cost of reaching a node based on its visiting frequency. The algorithm uses a priority queue to efficiently explore nodes with the lowest total cost, which includes both the edge weights and the penalty for visiting frequency.
 
-### Compilation
-To compile the code, use the following command:
-```bash
-g++ -o shortest_path_planning main.cpp
-Execution
-Run the compiled program:
+### Results
 
-./shortest_path_planning
-Input
-The program will prompt you to enter a source and destination node.
+The project provides an interactive interface where users can find paths between nodes and view the visiting frequency of nodes. The program saves visiting frequency data to a file for persistence across sessions.
 
-You can also choose to view the current visiting frequency of nodes or exit the program.
+## Features
 
-Output
-The program will output the shortest path from the source to the destination, including the path cost and the nodes visited.
+- **Modified Dijkstra's Algorithm**: The algorithm adjusts the cost of reaching a node based on its visiting frequency.
+- **Visiting Frequency Tracking**: The program tracks and updates the visiting frequency of each node.
+- **Interactive Interface**: Users can interactively find paths between nodes and view the visiting frequency of nodes.
+- **Data Persistence**: Visiting frequency data is saved to a file for persistence across sessions.
 
-It will also display the updated visiting frequency of nodes after each path calculation.
+## Technologies Used
 
-## Example Graph Description
-The graph used in this example has 7 nodes (0 to 6) with the following edges and weights:
+- **C++**: The project is implemented in C++ for efficiency and performance.
+- **Standard Template Library (STL)**: Utilizes STL components like `vector`, `queue`, and `algorithm` for data structures and operations.
 
-- 0: (1, 2), (2, 4), (3, 5)
-- 1: (0, 2), (2, 1), (4, 3)
-- 2: (0, 4), (1, 1), (3, 2), (5, 6)
-- 3: (0, 5), (2, 2), (4, 7), (6, 8)
-- 4: (1, 3), (3, 7), (5, 4)
-- 5: (2, 6), (4, 4), (6, 1)
-- 6: (3, 8), (5, 1)
+## Installation
 
----
+To use this project, simply compile the C++ code using a compatible compiler (e.g., GCC) and run the executable.
 
-## Description of visiting_frequency.txt File
-The `visiting_frequency.txt` file stores the number of times each node has been visited. This file is updated every time the program exits, ensuring that the visiting frequency data is preserved across multiple runs of the program.
+## Usage
 
----
+1. Compile the code using a C++ compiler.
+2. Run the program.
+3. Interact with the program by choosing options:
+   - View visiting frequency.
+   - Find a path between nodes.
+   - Exit the program.
 
-## Customization and Improvement Suggestions
+## Future Plans
 
-### Graph Customization
-Modify the adjacency list in the `main` function to represent a different graph.
+### Short-Term Goals
 
-### Penalty Adjustment
-Change the `Penalty` constant to adjust the impact of visiting frequency on path costs.
+1. **Optimization**: Improve the efficiency of the algorithm by exploring different data structures or optimization techniques.
+2. **Visualization**: Integrate a visualization tool to display the graph and paths visually.
+3. **Dynamic Graph Updates**: Allow users to dynamically add or remove nodes and edges from the graph.
 
-### File Handling
-Enhance the file handling to support multiple graphs or different file formats.
+### Long-Term Goals
 
-### User Interface
-Implement a more user-friendly interface, such as a graphical representation of the graph and paths.
+1. **Integration with Real-World Data**: Use real-world data (e.g., traffic patterns) to simulate more realistic scenarios.
+2. **Multi-Threaded Implementation**: Implement a multi-threaded version to handle large graphs more efficiently.
+3. **Comparison with Other Algorithms**: Compare the performance of the modified Dijkstra's algorithm with other pathfinding algorithms.
 
----
+## Contributing
 
-## Authors
-This project is a group effort developed collaboratively. For more information, visit the [GitHub repository](https://github.com/kumarayush0104/Shortest-Path-Planning/tree/main).
+Contributions are welcome! Please submit pull requests with clear descriptions of changes.
+
+## License
+
+None.
+
+## Acknowledgements
+
+We would like to express our sincere gratitude to all members of our project team for their tireless efforts and collaboration throughout this endeavor. Each member brought unique skills and perspectives that were instrumental in overcoming challenges and achieving our goals.
+
+Special thanks to **XYZ**, **PQR**, and **ABC**, who contributed significantly to the development and implementation of this project. Their dedication and teamwork were invaluable.
+
+We also appreciate the guidance and support from **Professor Abhik Mukherjee**, whose expertise and encouragement helped shape the direction and quality of our work.
+
+## Credits
+
+We used Dijkstra Algorithm, which helped us build our project.
