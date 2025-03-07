@@ -1,5 +1,3 @@
-markdown
-Copy
 # Shortest Path Planning with Modified Dijkstra's Algorithm
 
 ## Description of the Algorithm and Code Functionality
@@ -29,8 +27,6 @@ g++ -o shortest_path_planning main.cpp
 Execution
 Run the compiled program:
 
-bash
-Copy
 ./shortest_path_planning
 Input
 The program will prompt you to enter a source and destination node.
@@ -42,28 +38,39 @@ The program will output the shortest path from the source to the destination, in
 
 It will also display the updated visiting frequency of nodes after each path calculation.
 
-Example Graph Description
+## Example Graph Description
 The graph used in this example has 7 nodes (0 to 6) with the following edges and weights:
 
-0: (1, 2), (2, 4), (3, 5)
-1: (0, 2), (2, 1), (4, 3)
-2: (0, 4), (1, 1), (3, 2), (5, 6)
-3: (0, 5), (2, 2), (4, 7), (6, 8)
-4: (1, 3), (3, 7), (5, 4)
-5: (2, 6), (4, 4), (6, 1)
-6: (3, 8), (5, 1)
+- 0: (1, 2), (2, 4), (3, 5)
+- 1: (0, 2), (2, 1), (4, 3)
+- 2: (0, 4), (1, 1), (3, 2), (5, 6)
+- 3: (0, 5), (2, 2), (4, 7), (6, 8)
+- 4: (1, 3), (3, 7), (5, 4)
+- 5: (2, 6), (4, 4), (6, 1)
+- 6: (3, 8), (5, 1)
 
-Description of visiting_frequency.txt File
-The visiting_frequency.txt file stores the number of times each node has been visited. This file is updated every time the program exits, ensuring that the visiting frequency data is preserved across multiple runs of the program.
+---
 
-Customization and Improvement Suggestions
-Graph Customization: Modify the adjacency list in the main function to represent a different graph.
+## Description of visiting_frequency.txt File
+The `visiting_frequency.txt` file stores the number of times each node has been visited. This file is updated every time the program exits, ensuring that the visiting frequency data is preserved across multiple runs of the program.
 
-Penalty Adjustment: Change the Penalty constant to adjust the impact of visiting frequency on path costs.
+---
 
-File Handling: Enhance the file handling to support multiple graphs or different file formats.
+## Customization and Improvement Suggestions
 
-User Interface: Implement a more user-friendly interface, such as a graphical representation of the graph and paths.
+### Graph Customization
+Modify the adjacency list in the `main` function to represent a different graph.
 
-Authors
-This project is a group effort developed collaboratively. For more information, visit the GitHub repository.
+### Penalty Adjustment
+Change the `Penalty` constant to adjust the impact of visiting frequency on path costs.
+
+### File Handling
+Enhance the file handling to support multiple graphs or different file formats.
+
+### User Interface
+Implement a more user-friendly interface, such as a graphical representation of the graph and paths.
+
+---
+
+## Authors
+This project is a group effort developed collaboratively. For more information, visit the [GitHub repository](https://github.com/kumarayush0104/Shortest-Path-Planning/tree/main).
