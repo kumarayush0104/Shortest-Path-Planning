@@ -1,3 +1,5 @@
+markdown
+Copy
 # Shortest Path Planning with Modified Dijkstra's Algorithm
 
 ## Description of the Algorithm and Code Functionality
@@ -63,3 +65,5 @@ File Handling: Enhance the file handling to support multiple graphs or different
 
 User Interface: Implement a more user-friendly interface, such as a graphical representation of the graph and paths.
 
+Authors
+This project is a group effort developed collaboratively. For more information, visit the GitHub repository.
