@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Defining a variable penalty to find the path with less less visiting nodes
 const int Penalty = 10;
 const string FILENAME = "visiting_frequency.txt";
 
