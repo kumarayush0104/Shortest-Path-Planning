@@ -70,7 +70,7 @@ None.
 
 We would like to express our sincere gratitude to all members of our project team for their tireless efforts and collaboration throughout this endeavor. Each member brought unique skills and perspectives that were instrumental in overcoming challenges and achieving our goals.
 
-Special thanks to **Mithun Dutta**, **PQR**, and **ABC**, who contributed significantly to the development and implementation of this project. Their dedication and teamwork were invaluable.
+Special thanks to **Mithun Dutta**, who contributed significantly to the development and implementation of this project. His dedication and teamwork were invaluable.
 
 We also appreciate the guidance and support from **Professor Abhik Mukherjee**, whose expertise and encouragement helped shape the direction and quality of our work.
 
